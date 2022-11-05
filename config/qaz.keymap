@@ -41,7 +41,7 @@
         num_sym {
             bindings = <
     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5 &kp N6 &kp N7     &kp N8      &kp N9    &kp N0
-    &trans     &trans     &trans     &trans     &trans &trans &trans     &trans      &kp EQUAL &kp RET
+    &trans     &trans     &trans     &trans     &trans &trans &trans     &trans      &kp EQUAL &kp 
     &kp DEL               &none      &none      &none  &none  &none      &none       &none     &kp DOT
     &bootloader &trans    &none         &trans        &trans             &kp RET     &trans    &kp FSLH
             >;
@@ -61,7 +61,7 @@
     &kp ESC &bt BT_NXT &bt BT_PRV &none       &none &none &kp C_PP      &kp C_VOLUME_UP      &none     &kp BSPC
     &trans     &trans     &trans     &trans      &none &none &kp C_PREV    &kp C_VOLUME_DOWN     &kp C_NEXT &none
     &none                 &none      &none       &none &none &none       &none        &kp C_MUTE     &none
-    &none      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
+    &out OUT_TOG      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
             >;
         };
     };
