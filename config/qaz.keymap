@@ -15,6 +15,14 @@
 #define MEDIA   3
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+                };
+            };
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
