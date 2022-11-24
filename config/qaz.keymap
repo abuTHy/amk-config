@@ -14,7 +14,6 @@
 #define NAV     2
 #define MEDIA   3
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -66,7 +65,7 @@
     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5 &kp N6 &kp N7     &kp N8      &kp N9    &kp N0
     &kp TAB     &trans     &trans     &trans     &trans &trans &trans     &trans      &kp EQUAL &trans
     &kp DEL               &none      &none      &none  &none  &none      &none       &none     &trans
-    &trans  &trans    &none         &trans        &trans             &kp RET     &trans    &kp FSLH
+    &bootloader &trans    &none         &trans        &trans             &kp RET     &trans    &kp FSLH
             >;
         };
 
@@ -75,7 +74,7 @@
     &kp ESC &bt BT_NXT &bt BT_PRV &none       &none &none &none       &kp UP       &kp DEL     &kp BSPC
     &trans     &trans     &trans     &trans      &none &none &kp LEFT    &kp DOWN     &kp RIGHT &none
     &none                 &none      &none       &none &none &none       &none        &none     &none
-    &trans      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
+    &none      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
             >;
         };
         
@@ -84,8 +83,8 @@
     &kp ESC &bt BT_NXT &bt BT_PRV &none       &none &none &kp C_PP      &kp C_VOLUME_UP      &none     &kp BSPC
     &trans     &trans     &trans     &trans      &none &none &kp C_PREV    &kp C_VOLUME_DOWN     &kp C_NEXT &none
     &none                 &none      &none       &none &none &none       &none        &kp C_MUTE     &none
-    &trans      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
+    &out OUT_TOG      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
             >;
- 
+        };
     };
 };
