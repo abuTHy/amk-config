@@ -20,7 +20,6 @@
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            slow-release = <true>;
             bindings = <&kp BSPC>;
                 };                           
         compatible = "zmk,combos";
