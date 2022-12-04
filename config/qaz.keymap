@@ -20,6 +20,7 @@
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <8 9>;
+            slow-release = <true>;
             bindings = <&kp BSPC>;
                 };                           
         compatible = "zmk,combos";
@@ -67,7 +68,7 @@
     &kp Q      &kp W      &kp E       &kp R       &kp T  &kp Y  &kp U       &kp I       &kp O      &kp P
     &kp A      &kp S      &kp D       &kp F       &kp G  &kp H  &kp J       &kp K       &kp L      &kp ENTER
     &mt LEFT_SHIFT Z      &kp X       &kp C       &kp V  &kp B  &kp N       &kp M       &kp COMMA  &mt RIGHT_SHIFT DOT
-    &kp LCTRL  &kp LGUI   &kp LALT       &trans    &lt NAV SPACE  &none   &lt NUM_SYM SQT    &lt MEDIA FSLH
+    &kp LCTRL  &kp LGUI   &none       &trans    &lt NAV SPACE  &none   &lt NUM_SYM SQT    &lt MEDIA FSLH
             >;
         };
         num_sym {
@@ -75,7 +76,7 @@
     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5 &kp N6 &kp N7     &kp N8      &kp N9    &kp N0
     &kp TAB     &trans     &trans     &trans     &trans &trans &trans     &trans      &kp EQUAL &trans
     &trans               &none      &none      &none  &none  &none      &none       &none     &trans
-    &bootloader &trans    &none         &trans        &trans             &kp RET     &trans    &kp FSLH
+    &bootloader &trans    &none         &none       &trans             &none     &trans    &trans
             >;
         };
 
