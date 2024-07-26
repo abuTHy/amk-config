@@ -13,6 +13,7 @@
 #define NUM_SYM 1
 #define NAV     2
 #define MEDIA   3
+#define GGST    4
 
 / {
     combos {
@@ -32,6 +33,7 @@
         compatible = "zmk,combos";
         combo_TAB {
             timeout-ms = <50>;
+            layers = <0 1 2 3>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
                 };
@@ -83,7 +85,7 @@
             bindings = <
     &kp ESC &bt BT_NXT &bt BT_PRV &none       &none &none &none       &kp UP       &kp DEL     &kp BSPC
     &kp TAB    &trans     &trans     &trans      &none &none &kp LEFT    &kp DOWN     &kp RIGHT &none
-    &kp LEFT_SHIFT   &kp LALT      &none       &none &none &none       &none        &none     &mt RIGHT_SHIFT DOT
+    &kp LEFT_SHIFT   &kp LALT      &none       &to GGST &to DEFAULT &none       &none        &none     &mt RIGHT_SHIFT DOT
     &kp LCTRL      &kp LGUI     &none         &trans        &trans             &kp RET      &trans    &kp FSLH
             >;
         };
@@ -94,6 +96,14 @@
     &trans     &trans     &trans     &trans      &none &none &kp C_PREV    &kp C_VOLUME_DOWN     &kp C_NEXT &none
     &bt BT_CLR                 &none      &none       &none &none &none       &none        &kp C_MUTE     &none
     &out OUT_TOG      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
+            >;
+        };
+    GGST {
+            bindings = <
+    &kp Q      &kp W      &kp E       &kp R       &kp T  &kp Y  &kp U       &kp I       &kp O      &kp P
+    &kp A      &kp S      &kp D       &kp F       &kp G  &kp H  &kp J       &kp K       &kp L      &lt NAV ENTER
+    &mt LEFT_SHIFT Z      &kp X       &kp C       &kp V  &kp B  &kp N       &kp M       &kp COMMA  &mt RIGHT_SHIFT DOT
+    &kp LCTRL  &kp LGUI   &none       &trans    &kp SPACE  &none   &lt NUM_SYM SQT    &lt MEDIA FSLH
             >;
         };
     };
